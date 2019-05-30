@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Section View Controller-->
+        <!--View Controller-->
         <scene sceneID="9Dp-7s-xBj">
             <objects>
                 <viewController id="Ftd-eW-wCj" customClass="SectionViewController" customModule="CustomTransition" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +146,7 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ej4-rc-Y7f" secondAttribute="bottom" priority="999" id="4Wb-2r-l8A"/>
                             <constraint firstItem="ej4-rc-Y7f" firstAttribute="leading" secondItem="K6r-vz-xad" secondAttribute="leading" id="9A6-ZC-kHK"/>
@@ -163,6 +163,7 @@
                         <outlet property="closeVisualEffectView" destination="EZR-Aa-21S" id="VKN-qk-1Qi"/>
                         <outlet property="coverImageView" destination="7fw-ny-Jly" id="bco-Eh-45j"/>
                         <outlet property="coverView" destination="fQw-MT-vfR" id="iXc-xE-J3x"/>
+                        <outlet property="panToClose" destination="buk-za-Bps" id="Sq5-aj-QE7"/>
                         <outlet property="progressLabel" destination="9JN-Wa-CzE" id="qIN-sW-Qpx"/>
                         <outlet property="scrollView" destination="ej4-rc-Y7f" id="tHx-rA-gAv"/>
                         <outlet property="subheadVisualEffectView" destination="sec-Rt-jBH" id="hfA-jY-osE"/>
@@ -170,6 +171,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oH6-9V-aK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="buk-za-Bps" customClass="InteractionPanToClose" customModule="CustomTransition" customModuleProvider="target">
+                    <connections>
+                        <outlet property="dialogView" destination="K6r-vz-xad" id="5zR-d3-Cxx"/>
+                        <outlet property="scrollView" destination="ej4-rc-Y7f" id="8k6-Hu-ni4"/>
+                        <outlet property="viewController" destination="Ftd-eW-wCj" id="efn-u8-MiP"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="2756" y="-467.3163418290855"/>
         </scene>

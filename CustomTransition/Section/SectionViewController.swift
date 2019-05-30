@@ -20,11 +20,13 @@ class SectionViewController: UIViewController {
     @IBOutlet weak var subheadVisualEffectView: UIVisualEffectView!
     @IBOutlet weak var closeVisualEffectView: UIVisualEffectView!
     
+    @IBOutlet var panToClose: InteractionPanToClose!
+
     var section: [String: String]!
     var sections: [[String: String]]!
     var indexPath: IndexPath!
     var isStatusBarHidden = false
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,10 +36,14 @@ class SectionViewController: UIViewController {
         coverImageView.image = UIImage(named: section["image"]!)
         progressLabel.text = "\(indexPath.row+1) / \(sections.count)"
 
+        scrollView.delegate = self
+        
         isStatusBarHidden = true
         UIView.animate(withDuration: 0.5) {
             self.setNeedsStatusBarAppearanceUpdate()
         }
+        
+        panToClose.setGestureRecognizer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,4 +67,15 @@ class SectionViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+}
+
+
+extension SectionViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+
+        if offsetY < 0 {
+            scrollView.contentOffset.y = 0
+        }
+    }
 }

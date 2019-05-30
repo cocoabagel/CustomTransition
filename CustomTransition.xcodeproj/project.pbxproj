@@ -17,6 +17,7 @@
 		05CE714E229F85E600E2BA12 /* Section.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05CE714D229F85E600E2BA12 /* Section.storyboard */; };
 		05CE7150229F877700E2BA12 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE714F229F877700E2BA12 /* SectionViewController.swift */; };
 		05CE7153229F8CAE00E2BA12 /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE7152229F8CAE00E2BA12 /* PresentSectionViewController.swift */; };
+		05CE7155229F94BC00E2BA12 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CE7154229F94BC00E2BA12 /* InteractionPanToClose.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		05CE714D229F85E600E2BA12 /* Section.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Section.storyboard; sourceTree = "<group>"; };
 		05CE714F229F877700E2BA12 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		05CE7152229F8CAE00E2BA12 /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
+		05CE7154229F94BC00E2BA12 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				05CE714D229F85E600E2BA12 /* Section.storyboard */,
 				05CE714F229F877700E2BA12 /* SectionViewController.swift */,
 				05CE7152229F8CAE00E2BA12 /* PresentSectionViewController.swift */,
+				05CE7154229F94BC00E2BA12 /* InteractionPanToClose.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				05CE7150229F877700E2BA12 /* SectionViewController.swift in Sources */,
 				05CE7153229F8CAE00E2BA12 /* PresentSectionViewController.swift in Sources */,
 				05CE714A229F82F100E2BA12 /* SectionCollectionViewCell.swift in Sources */,
+				05CE7155229F94BC00E2BA12 /* InteractionPanToClose.swift in Sources */,
 				05CE7148229F7EBA00E2BA12 /* HomeViewController.swift in Sources */,
 				05CE714C229F836700E2BA12 /* Data.swift in Sources */,
 			);
